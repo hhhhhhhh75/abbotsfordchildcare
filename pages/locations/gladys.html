@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,100 +8,136 @@
     <title>Gladys | Abbotsford Childcare</title>
 </head>
 <script src="../../script.js"></script>
+
 <body>
 
-<div class="page-header">
-    <nav>
-        <a href="../../index.html"><img src="../../images/logo.png" class="logo"></a>
-        <div class="links">
-            <a href="../../index.html">Home</a>
-            <a href="../locations.html" class="dropdown-heading">Locations<img src="../../images/dropdown.svg"></a>
-            <div class="dropdown-links">
-                <a href="gladys.html" style="padding-top:0px">Gladys</a>
-                <a href="calvin.html">Calvin</a>
-                <a href="auguston.html">Auguston</a>
-                <a href="mcmillan.html">McMillan</a>
-                <a href="delair.html">Delair</a>
-                <a href="gladwin.html">Gladwin</a>
-                <a href="chilliwack.html">Chilliwack</a>
+    <div class="page-header">
+        <nav>
+            <a href="../../index.html"><img src="../../images/logo.png" class="logo"></a>
+            <div class="links">
+                <a href="../../index.html">Home</a>
+                <a href="../locations.html" class="dropdown-heading">Locations<img src="../../images/dropdown.svg"></a>
+                <div class="dropdown-links">
+                    <a href="gladys.html" style="padding-top:0px">Gladys</a>
+                    <a href="calvin.html">Calvin</a>
+                    <a href="auguston.html">Auguston</a>
+                    <a href="mcmillan.html">McMillan</a>
+                    <a href="delair.html">Delair</a>
+                    <a href="gladwin.html">Gladwin</a>
+                    <a href="chilliwack.html">Chilliwack</a>
+                </div>
+
+                <a href="../inquire.html">Inquire</a>
+                <a href="../employment.html">Employment</a>
+                <a href="../about.html">About Us</a>
+                <a style="padding-right:0px;" href="../faq.html">FAQ</a>
+
+            </div>
+            <div class="mobile-nav">
+                <div class="x" onclick="xAnimation()">
+                    <div class="bar" id="bar1">
+                    </div>
+                    <div class="bar" id="bar2">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="page-header-text">
+            <h1 class="little">Little Wonders Montessori</h1>
+            <h2>Gladys Avenue Location</h2>
+        </div>
+    </div>
+
+    <main>
+        <div id="mobile">
+            <a href="index.html">
+                <h1>Home</h1>
+            </a>
+            <div class="dropdown-heading-mobile" onclick="mobileDropdown();"><a>
+                    <h1>Locations</h1>
+                </a><img src="../../images/dropdown.svg"></div>
+            <div class="dropdown-links-mobile">
+                <a href="gladys.html" style="padding-top:0px">
+                    <h2>Gladys</h2>
+                </a>
+                <a href="calvin.html">
+                    <h2>Calvin</h2>
+                </a>
+                <a href="augston.html">
+                    <h2>Auguston</h2>
+                </a>
+                <a href="mcmillan.html">
+                    <h2>McMillan</h2>
+                </a>
+                <a href="delair.html">
+                    <h2>Delair</h2>
+                </a>
+                <a href="gladwin.html">
+                    <h2>Gladwin</h2>
+                </a>
+                <a href="chilliwack.html">
+                    <h2>Chilliwack</h2>
+                </a>
             </div>
 
-            <a href="../inquire.html">Inquire</a>
-            <a href="../employment.html">Employment</a>
-            <a href="../about.html">About Us</a>
-            <a style="padding-right:0px;" href="../faq.html">FAQ</a>
-
+            <a href="../inquire.html">
+                <h1>Inquire</h1>
+            </a>
+            <a href="../employment.html">
+                <h1>Employment</h1>
+            </a>
+            <a href="../about.html">
+                <h1>About Us</h1>
+            </a>
+            <a href="../faq.html" style="padding-right:0px;">
+                <h1>FAQs</h1>
+            </a>
         </div>
-        <div class="mobile-nav">
-            <div class="x" onclick="xAnimation()">
-                <div class="bar" id="bar1">
+
+        <div class="location-wrapper">
+            <div class="location-info">
+
+                <h2>About</h2>
+                <p>Little Wonders Montessori on Gladys Avenue is the original Little Wonders location. We have large,
+                    oversized classrooms for every age with plenty of space for the children to grow and play. We also
+                    have a large outdoor play area with a variety of activities and lots of room to run around. Our
+                    Teachers provide a balanced approach to Montessori Curriculum and Traditional Play Based theme
+                    teaching.</p>
+
+                <h2>Address</h2>
+                <p>2884 Gladys Ave, Abbotsford</p>
+
+                <div>
+                    <h2>Programs</h2>
+                    <p>Infant Toddler (24 spaces; 3 months to 36 Months)</p>
+                    <p>3-5 yr old Daycare (25 spaces; 30 Months to 5 yrs old)</p>
+                    <p>Montessori Preschool (20 spaces; 30 Months to 5 yrs old)</p>
+                    <p>School Age (10 spaces; Kindergarten to Grade 5; McMillan and Sandy Hill Elementary)</p>
                 </div>
-                <div class="bar" id="bar2">
+
+                <div class="location-contact">
+                    <h2>Contact</h2>
+                    <p>Phone:&nbsp;<a href="tel:6048539998">604-853-9998</a></p>
+                    <p>Email:&nbsp;<a
+                            href="mailto:littlewondersabbotsford@gmail.com">littlewondersabbotsford@gmail.com</a></p>
+                </div>
+
+                <br>
+                <div class="location-buttons">
+                    <div class="location-buttons-group">
+                        <a href="tel:6048539998"><button>Call</button></a>
+                        <a href="mailto:littlewondersabbotsford@gmail.com"><button>Email</button></a>
+                    </div>
                 </div>
             </div>
+            <div class="location-images">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5229.43029796837!2d-122.28802072279034!3d49.05403947135939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548435b6b1e0c55d%3A0xf5d64354541da623!2sLittle%20Wonders%20Montessori%20Childcare%20%26%20Preschool%20Ltd.!5e0!3m2!1sen!2sca!4v1740782036062!5m2!1sen!2sca"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
-    </nav>
-<div class="page-header-text">
-    <h1 class="little">Little Wonders Montessori</h1>
-    <h2>Gladys Avenue Location</h2>
-</div>
-</div>
-
-<main>
-    <div id="mobile">
-        <a href="index.html"><h1>Home</h1></a>
-        <div class="dropdown-heading-mobile" onclick="mobileDropdown();"><a><h1>Locations</h1></a><img src="../../images/dropdown.svg"></div>
-        <div class="dropdown-links-mobile">
-            <a href="gladys.html" style="padding-top:0px"><h2>Gladys</h2></a>
-            <a href="calvin.html"><h2>Calvin</h2></a>
-            <a href="augston.html"><h2>Auguston</h2></a>
-            <a href="mcmillan.html"><h2>McMillan</h2></a>
-            <a href="delair.html"><h2>Delair</h2></a>
-            <a href="gladwin.html"><h2>Gladwin</h2></a>
-            <a href="chilliwack.html"><h2>Chilliwack</h2></a>
-        </div>
-
-        <a href="../inquire.html"><h1>Inquire</h1></a>
-        <a href="../employment.html"><h1>Employment</h1></a>
-        <a href="../about.html"><h1>About Us</h1></a>
-        <a href="../faq.html" style="padding-right:0px;"><h1>FAQs</h1></a>
-    </div>
-
-    <div class="location-wrapper">
-    <div class="location-info">
-
-    <h2>About</h2>
-    <p>Little Wonders Montessori on Gladys Avenue is the original Little Wonders location. We have large, oversized classrooms for every age with plenty of space for the children to grow and play. We also have a large outdoor play area with a variety of activities and lots of room to run around.   Our Teachers provide a balanced approach to Montessori Curriculum and Traditional Play Based theme teaching.</p>
-   
-    <h2>Address</h2>
-    <p>2884 Gladys Ave, Abbotsford</p>
-     
-    <div>
-        <h2>Programs</h2>
-        <p>Infant Toddler (24 spaces; 3 months to 36 Months)</p>
-        <p>3-5 yr old Daycare (25 spaces; 30 Months to 5 yrs old)</p>
-        <p>Montessori Preschool (20 spaces; 30 Months to 5 yrs old)</p>
-        <p>School Age (10 spaces; Kindergarten to Grade 5; McMillan and Sandy Hill Elementary)</p>
-    </div>
-
-    <div class="location-contact">
-        <h2>Contact</h2>
-        <p>Phone:&nbsp;<a href="tel:6048539998">604-853-9998</a></p>
-        <p>Email:&nbsp;<a href="mailto:littlewondersabbotsford@gmail.com">littlewondersabbotsford@gmail.com</a></p>
-    </div>
-
-    <br>
-    <div class="location-buttons">
-        <div class="location-buttons-group">
-        <a href="tel:6048539998"><button>Call</button></a>
-        <a href="mailto:littlewondersabbotsford@gmail.com"><button>Email</button></a>
-        </div>
-    </div>
-</div>
-<div class="location-images">
-<img src="../../images/gladys.png">
-</div>
-</div>
-</main>
+    </main>
 </body>
+
 </html>
