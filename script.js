@@ -196,6 +196,6 @@ function moveSVG(svg, event) {
     let mx = event.clientX;
     let my = event.clientY;
 
-    svgItem.setAttribute("cx", (mx-0));
+    svgItem.setAttribute("cx", mx);
     svgItem.setAttribute("cy", (my-0) + window.scrollY);
 }

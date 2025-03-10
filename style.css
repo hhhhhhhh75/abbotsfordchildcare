@@ -53,7 +53,8 @@ summary {
     align-items: center;
     width: auto;
     justify-content: space-between;
-
+    line-height: 1.1em;
+    
 }
 
 summary:hover {
@@ -67,17 +68,19 @@ details {
     border-radius: 20px;
     color:white;
 }
-
-details[open]>summary::after {
-    padding-left: 15px;
-    content: "▼";
-    font-size: 23px;
+details>summary > span {
+    transition: transform 0.2s;
 }
 
-details:not([open])>summary::after {
-    padding-left: 17px;
-    content: "▶";
-    font-size: 23px;
+details[open]>summary > span {
+    transform:rotate(270deg);
+    font-size: 35px;
+}
+
+details:not([open])>summary > span {
+    transform:rotate(180deg);
+    font-size: 35px;
+
 }
 
 footer hr {
@@ -93,7 +96,7 @@ h1 {
     font-size: 55px;
     margin-top: 0px;
     margin-bottom: 15px;
-
+    font-weight: 500;
 }
 
 h2 {
@@ -162,7 +165,7 @@ div.location-contact>p>a:hover {
 
 button {
     font-family: Inter;
-    font-size: 30px;
+    font-size: 1.25em;
     color: white;
     padding: 10px;
     border: none;
@@ -250,8 +253,8 @@ div.location {
     display: flex;
     flex-direction: row;
     height: 350px;
-    width: 100%;
-    max-width: 775px;
+    width: 800px;
+    max-width: 800px;
 }
 
 div.location-content {
@@ -475,9 +478,24 @@ div.slide>h2 {
     margin-top: 5px;
 }
 
+@media only screen and (max-width: 1183px) {
+    div#faq-header > h1 {
+        font-size:5em;
+    }
+    
+    }
+    
+
+@media only screen and (max-width: 1285px) {
+div#faq-header > h1 {
+    font-size:5.5em;
+}
+
+}
+
 div.page-header {
     height: 300px;
-    background-image: url(images/greenblue.jpg);
+    background-image: url("../../images/greenblue.jpg");
     background-size: 100%;
     background-position: 10% 15%;
     border-bottom-left-radius: 20px;
@@ -501,7 +519,7 @@ div.page-header-text>h1 {
 }
 
 div.page-header-text>h2 {
-    margin-top: 0px;
+    margin-top: 10px;
     color: white;
     font-weight: 300;
 }
@@ -633,6 +651,7 @@ div.text-info {
     align-self: center;
     justify-content: center;
     padding: 50px;
+    padding-top:25px;
     width: 50%;
     height: inherit;
     box-sizing: border-box;
@@ -670,7 +689,7 @@ div.dropdown-links {
     transition: all 0.2s;
     opacity: 0;
     visibility: hidden;
-    margin-top: 71.5px;
+    margin-top: 71px;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -837,7 +856,7 @@ div.footer-section div > a > img {
 }
 
 footer img.logo {
-    height: 70px;
+    height: 45px;
 }
 
 footer h2 {
@@ -961,6 +980,30 @@ form.inquire-form {
 form.inquire-form>div {
     display: flex;
     flex-direction: column;
+}
+
+div.employment-wrapper {
+    display:flex;
+    flex-direction: row;
+    gap:25px
+}
+
+div.employment-content {
+    background-color:#6da7ba;
+    padding:25px;
+    border-radius: 20px;
+    color:white;
+}
+
+div.employment-content h1 {
+    font-weight:400;
+    margin-bottom: 0px;
+    line-height:1em;
+}
+
+.employment-image {
+border-radius:25px;
+object-fit: cover;
 }
 
 @media only screen and (max-width: 1210px) {
