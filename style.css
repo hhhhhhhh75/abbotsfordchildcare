@@ -54,7 +54,7 @@ summary {
     width: auto;
     justify-content: space-between;
     line-height: 1.1em;
-    
+
 }
 
 summary:hover {
@@ -64,21 +64,21 @@ summary:hover {
 details {
     padding: 15px;
     background-color: #6da7ba;
-    width: calc(50% - 12.5px);
     border-radius: 20px;
-    color:white;
+    color: white;
 }
-details>summary > span {
+
+details>summary>span {
     transition: transform 0.2s;
 }
 
-details[open]>summary > span {
-    transform:rotate(270deg);
+details[open]>summary>span {
+    transform: rotate(270deg);
     font-size: 35px;
 }
 
-details:not([open])>summary > span {
-    transform:rotate(180deg);
+details:not([open])>summary>span {
+    transform: rotate(180deg);
     font-size: 35px;
 
 }
@@ -91,16 +91,22 @@ footer hr {
     margin: 15px;
 }
 
+hr {
+    width: 100%;
+    margin: 0px;
+}
+
 h1 {
     font-family: "Host Grotesk", sans-serif;
     font-size: 55px;
     margin-top: 0px;
     margin-bottom: 15px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 h2 {
     margin-top: 15px;
+    font-weight:300;
 }
 
 h2,
@@ -109,7 +115,7 @@ label {
     font-family: "Host Grotesk", sans-serif;
     font-size: 35px;
     margin-bottom: 0px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 form {
@@ -156,7 +162,7 @@ a {
     font-size: 20px;
     transition: all 0.2s;
     text-decoration: none;
-    color: black;
+    color: #007bff;
 }
 
 div.location-contact>p>a:hover {
@@ -193,8 +199,8 @@ nav {
     position: relative;
 }
 
-nav + a {
-    height:70px;
+nav+a {
+    height: 70px;
 }
 
 div.mobile-nav {
@@ -226,13 +232,12 @@ div.links>a {
 }
 
 div.links>a:hover {
-    color: #6da7ba;
+    text-decoration: underline;
     cursor: pointer;
 }
 
 main {
     padding: 25px;
-    padding-bottom: 0px;
 }
 
 div.locations-container {
@@ -258,28 +263,28 @@ div.location {
 }
 
 div.location-content {
-    color:white;
+    color: white;
     padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap:10px;
+    gap: 10px;
 }
 
 .location-content h2 {
-    font-size:2.5em;
-    margin-top:0px;
+    font-size: 2.5em;
+    margin-top: 0px;
 }
 
 div.location-contact>p {
     flex-wrap: wrap;
-    
+
 }
 
 div.location-content h3 {
     text-decoration: none;
-    margin-top:0px;
+    margin-top: 0px;
 }
 
 .location-image {
@@ -288,7 +293,7 @@ div.location-content h3 {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     height: 100%;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-end;
@@ -296,12 +301,12 @@ div.location-content h3 {
 
 img.location-company {
     position: relative;
-    width:140px;
+    width: 140px;
     background-color: white;
-    padding:5px;
+    padding: 5px;
     border-radius: 10px;
     position: absolute;
-    margin:10px;
+    margin: 10px;
 }
 
 div.location-info {
@@ -313,11 +318,11 @@ div.location-info {
     padding: 25px;
     border-radius: 20px;
     height: max-content;
-    color:white;
+    color: white;
 }
 
 .location-info a {
-    color:white; 
+    color: white;
 }
 
 div.location-info>h2:first-child {
@@ -354,6 +359,7 @@ input[type="submit"]:hover {
 
 input[type="submit"] {
     width: fit-content;
+    transition: all 0.2s;
 }
 
 
@@ -422,20 +428,20 @@ div.slider {
 
 div.slider-dots {
     width: auto;
-    display:flex;
+    display: flex;
     flex-direction: row;
-    gap:5px;
+    gap: 5px;
 }
 
 div.slider-dots span.active {
     background-color: rgba(47, 47, 47, 1);
-    width:40px;
+    width: 40px;
 }
 
 div.slider-dots span {
     transition: all 0.2s;
-    width:15px;
-    height:15px;
+    width: 15px;
+    height: 15px;
     border-radius: 15px;
     background-color: rgba(47, 47, 47, 0.7);
 }
@@ -453,7 +459,7 @@ div.slider-wrapper {
 }
 
 div.slider-buttons {
-    gap:25px;
+    gap: 25px;
     width: calc(50% - 30px);
     display: flex;
     flex-direction: row;
@@ -478,24 +484,14 @@ div.slide>h2 {
     margin-top: 5px;
 }
 
-@media only screen and (max-width: 1183px) {
-    div#faq-header > h1 {
-        font-size:5em;
-    }
-    
-    }
-    
-
-@media only screen and (max-width: 1285px) {
-div#faq-header > h1 {
-    font-size:5.5em;
-}
-
-}
 
 div.page-header {
-    height: 300px;
-    background-image: url("images/greenblue.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 300px;
+    background-image: url(../../images/greenblue.jpg);
     background-size: 100%;
     background-position: 10% 15%;
     border-bottom-left-radius: 20px;
@@ -606,7 +602,7 @@ div.header-text {
     height: 100%;
     gap: 20px;
     padding: 20px;
-    margin-top:-76px;
+    margin-top: -76px;
     z-index: 1;
     position: relative;
 }
@@ -651,7 +647,7 @@ div.text-info {
     align-self: center;
     justify-content: center;
     padding: 50px;
-    padding-top:25px;
+    padding-top: 25px;
     width: 50%;
     height: inherit;
     box-sizing: border-box;
@@ -707,7 +703,7 @@ div.dropdown-links-mobile {
     display: flex;
     flex-direction: column;
     visibility: hidden;
-    margin-top: -329px;
+    margin-top: -314px;
     transition: all 0.2s;
     opacity: 0;
 }
@@ -717,7 +713,8 @@ div.dropdown-heading-mobile>a>h1 {
     margin: 0px;
     transition: all 0.2s;
     font-weight: 400;
-    font-size: 2.5em;
+    font-size: 2em;
+    margin-top: -10px;
 }
 
 div.dropdown-heading-mobile {
@@ -726,12 +723,6 @@ div.dropdown-heading-mobile {
     align-items: center;
 }
 
-div.dropdown-heading-mobile:hover+div.dropdown-links-mobile,
-div.dropdown-links-mobile:hover {
-    visibility: visible;
-    margin-top: 0px;
-    opacity: 1;
-}
 
 div.dropdown-links-mobile>a>h2 {
     font-weight: 400;
@@ -739,6 +730,7 @@ div.dropdown-links-mobile>a>h2 {
     margin-left: -15px;
     transition: all 0.2s;
     color: white;
+    font-size: 1.5em;
 }
 
 div.dropdown-links>a {
@@ -748,7 +740,7 @@ div.dropdown-links>a {
 
 }
 
-div.dropdown-links>a:hover, a:hover {
+div.dropdown-links>a:hover {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -796,10 +788,9 @@ div.answer {
 footer {
     background-color: #2F2F2F;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     width: calc(100% - 0px);
-    margin-top:25px;
     padding: 25px;
     color: white;
     border-top-right-radius: 20px;
@@ -814,6 +805,8 @@ footer h1 {
 footer a,
 footer p {
     color: white;
+    margin: 0px;
+    text-align: center;
 }
 
 div.footer-content {
@@ -851,8 +844,8 @@ div.footer-section {
     gap: 5px;
 }
 
-div.footer-section div > a > img {
-    height:40px;
+div.footer-section div>a>img {
+    height: 40px;
 }
 
 footer img.logo {
@@ -874,9 +867,16 @@ footer h2 {
 }
 
 .faq-wrapper {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.faq-column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
     gap: 25px;
 }
 
@@ -922,23 +922,25 @@ div.x {
     background-color: rgba(47, 47, 47, 0.7);
     transition: all 0.2s;
     z-index: 4;
+    padding-top: 90px;
 }
 
 #mobile>a>h1 {
     color: white;
-    font-size: 2.5em;
+    font-size: 2em;
     margin: 0px;
     background: transparent;
     margin-left: -10px;
     transition: all 0.2s;
     font-weight: 400;
+    margin-top: -10px;
 }
 
 div.about-us-wrapper {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    color:white;
+    color: white;
 }
 
 .about-us-section {
@@ -971,10 +973,11 @@ form.inquire-form {
     padding: 25px;
     border-radius: 25px;
     max-width: 800px;
+    width:100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    color:white;
+    color: white;
 }
 
 form.inquire-form>div {
@@ -983,32 +986,46 @@ form.inquire-form>div {
 }
 
 div.employment-wrapper {
-    display:flex;
+    display: flex;
     flex-direction: row;
-    gap:25px
+    gap: 25px
 }
 
 div.employment-content {
-    background-color:#6da7ba;
-    padding:25px;
+    background-color: #6da7ba;
+    padding: 25px;
     border-radius: 20px;
-    color:white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width:60%;
 }
 
 div.employment-content h1 {
-    font-weight:400;
+    font-weight: 400;
     margin-bottom: 0px;
-    line-height:1em;
+    line-height: 1em;
 }
 
 .employment-image {
-border-radius:25px;
-object-fit: cover;
+    border-radius: 25px;
+    object-fit: cover;
+    width: 40%;
+
 }
 
 @media only screen and (max-width: 1210px) {
     div.page-header-text>h1.little {
         font-size: 5em;
+    }
+
+    div.employment-wrapper {
+        flex-direction: column;
+    }
+
+    div.employment-content, .employment-image {
+        width:100%;
     }
 }
 
@@ -1059,6 +1076,11 @@ object-fit: cover;
 
     }
 
+    h1 {
+        line-height:50px;
+        font-weight: 400;
+    }
+
     div.slider-buttons>button {
         height: 60px;
         width: 60px;
@@ -1066,7 +1088,7 @@ object-fit: cover;
 
     div.slider-buttons {
         justify-content: space-evenly;
-        gap:0px;
+        gap: 0px;
         width: calc(100% - 31px);
     }
 
@@ -1096,8 +1118,9 @@ object-fit: cover;
         font-size: 4em;
         line-height: 60px;
     }
+
     div.header-text {
-        margin-top:0px;
+        margin-top: 0px;
     }
 
     summary {
@@ -1131,7 +1154,7 @@ object-fit: cover;
 
     div.slider-wrapper {
         width: 100%;
-        height:300px;
+        height: 300px;
     }
 
     div.slider {
@@ -1171,11 +1194,12 @@ object-fit: cover;
         padding-left: 10px;
         position: relative;
     }
-    
+
     div.location {
         flex-direction: column;
-        height:max-content;
+        height: max-content;
         border-radius: 15px;
+        width: 100%;
     }
 
     .location-image {
@@ -1213,7 +1237,20 @@ object-fit: cover;
     }
 
     div.locations-container {
-        gap:15px;
+        gap: 15px;
+    }
+
+    div.faq-column {
+        width: 100%;
+        gap: 15px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+    div.employ > h1 {
+        font-size:3.5em;
     }
 }
 
