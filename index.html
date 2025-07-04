@@ -13,7 +13,7 @@
 
     <script src="script.js"></script>
 
-    <div class="main-header" onmousemove="moveSVG('circle', event)">
+    <div class="main-header">
         <div class="stupid-header-wrapper">
             <nav>
                 <a href="index.html"><img src="images/logo.png" class="logo"></a>
@@ -47,25 +47,19 @@
             </nav>
             <div class="header-text">
                 <h1>Abbotsford Childcare</h1>
-                <p>With six locations all around the fraser valley, one of them will work for you!<br> Each location
-                    offers
-                    various programs have different availability,<br> be sure to check each location to make sure they
-                    have
-                    the right program for your child.</p>
+                <div class="header-logos">
+                    <img src="images/kidsclub.jpg">
+                    <h1 style="margin:0px;"> + </h1>
+                    <img src="images/montessori.png">
+                </div>
+                <p>With multiple locations across the Fraser Valley, one of them will work for you!<br>
+Each location offers a variety of programs that serve different age groups.<br>
+Check out each location to find the perfect one for you and your child.</p>
 
                 <a href="pages/locations.html"><button>View All Locations</button></a>
             </div>
-            <svg width="100%" height="calc(100% - 217px)" xmlns="http://www.w3.org/2000/svg" id="svg"
-                style="border-radius:20px;position:absolute;top:0px;z-index:0;left:0px;">
-                <filter id="blur">
-                    <feGaussianBlur stdDeviation="20" result="blur" />
-                    <feTurbulence type="fractalNoise" baseFrequency="0.25" numOctaves="3" stitchTiles="stitch" />
-                    <feComposite operator="in" in="blur" in2="grain" />
-                </filter>
-
-                <circle cx="0" cy="0" r="200" fill="rgba(255,255,255,0.4)" id="circle" filter="url(#blur)">
-                </circle>
-            </svg>
+            <div class="background--custom">
+            </div>
         </div>
     </div>
 
@@ -128,7 +122,7 @@
                 </div>
             </div>
 
-            <img src="images/kidsplaying2.jpg">
+            <img src="images/front1.jpg">
         </div>
 
         <div class="text-image left">
@@ -139,7 +133,7 @@
                 </div>
             </div>
 
-            <img src="images/kidsplaying.jpg" id="example-image">
+            <img src="images/front2.jpg" id="example-image">
         </div>
 
         <div class="text-image" style="right:0px; justify-content: flex-end;">
@@ -153,46 +147,46 @@
                 <div class="slider" id="slider">
                     <div class="slide" id="slide1">
                         <div class="slide-image"
-                            style="background-image: url(https://abbotsfordchildcare.com/wp-content/uploads/2019/01/toddler-care-300x176.jpg);background-size: 100%;">
+                            style="background-image: url(images/toddler-care.jpg);background-size: 100%;background-position: 70%;">
                             <h2>Toddler Care</h2>
                         </div>
 
                     </div>
                     <div class="slide" id="slide2">
                         <div class="slide-image"
-                            style="background-image: url(https://abbotsfordchildcare.com/wp-content/uploads/2019/01/daycare-2-300x176.jpg);background-size: 100%;">
+                            style="background-image: url(images/infantcare.jpg);background-size: 100%;background-position: 70%;">
                             <h2>Infant Care</h2>
                         </div>
 
                     </div>
                     <div class="slide" id="slide3">
                         <div class="slide-image"
-                            style="background-image: url(https://abbotsfordchildcare.com/wp-content/uploads/2019/01/montessori--300x176.jpg);background-size: 100%;">
+                            style="background-image: url(images/daycare.jpg);background-size: 100%;background-position: 70%;">
                             <h2>Daycare</h2>
                         </div>
 
                     </div>
                     <div class="slide" id="slide4">
                         <div class="slide-image"
-                            style="background-image: url(https://abbotsfordchildcare.com/wp-content/uploads/2019/01/Pre-K-300x176.jpg)">
+                            style="background-image: url(images/montprek.jpg)">
                             <h2>Montessori Preschool</h2>
                         </div>
                     </div>
                     <div class="slide" id="slide5">
                         <div class="slide-image"
-                            style="background-image: url(https://abbotsfordchildcare.com/wp-content/uploads/2019/01/toddler-care-300x176.jpg);background-size: 100%;">
+                            style="background-image: url(images/prek.jpg);background-size: 100%;">
                             <h2>Pre-K</h2>
                         </div>
                     </div>
                     <div class="slide" id="slide6">
                         <div class="slide-image"
-                            style="background-image: url(https://abbotsfordchildcare.com/wp-content/uploads/2019/01/toddler-care-300x176.jpg);background-size: 100%;">
+                            style="background-image: url(images/ofscare.jpg);background-size: 100%;">
                             <h2>Out of School Care</h2>
                         </div>
                     </div>
                     <div class="slide" id="slide7">
                         <div class="slide-image"
-                            style="background-image: url(https://abbotsfordchildcare.com/wp-content/uploads/2019/01/toddler-care-300x176.jpg);background-size: 100%;">
+                            style="background-image: url(images/schooltransit.jpg);background-size: 100%;">
                             <h2>School Transportation</h2>
                         </div>
                     </div>

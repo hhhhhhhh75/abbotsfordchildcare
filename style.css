@@ -48,13 +48,19 @@ body {
 
 
 summary {
+    font-family: "Host Grotesk", sans-serif;
     list-style-type: none;
     display: flex;
     align-items: center;
     width: auto;
     justify-content: space-between;
     line-height: 1.1em;
-
+    font-size:30px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    border:2px black dotted;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 summary:hover {
@@ -62,10 +68,14 @@ summary:hover {
 }
 
 details {
-    padding: 15px;
-    background-color: #6da7ba;
-    border-radius: 20px;
-    color: white;
+    background-color: white;
+    color: black;
+    font-size:1em;
+}
+
+details[open] >summary {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 details>summary>span {
@@ -81,6 +91,15 @@ details:not([open])>summary>span {
     transform: rotate(180deg);
     font-size: 35px;
 
+}
+
+details > p {
+    padding:10px;
+    border:2px black dotted;
+    margin-top:0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top:none;
 }
 
 footer hr {
@@ -106,11 +125,10 @@ h1 {
 
 h2 {
     margin-top: 15px;
-    font-weight:300;
+    font-weight: 300;
 }
 
 h2,
-summary,
 label {
     font-family: "Host Grotesk", sans-serif;
     font-size: 35px;
@@ -491,7 +509,7 @@ div.page-header {
     justify-content: space-between;
     height: 100%;
     min-height: 300px;
-    background-image: url(images/greenblue.jpg);
+    background-image: url(../../images/greenblue.jpg);
     background-size: 100%;
     background-position: 10% 15%;
     border-bottom-left-radius: 20px;
@@ -524,6 +542,20 @@ div.page-header-text>h1,
 div.page-header-text>p {
     color: white;
     display: flex;
+}
+
+div.header-logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+}
+
+div.header-logos > img{
+ max-width:300px;
+ background-color: white;
+ padding:10px;
+ border-radius: 10px;
 }
 
 @keyframes slideMove {
@@ -584,7 +616,7 @@ div.stupid-header-wrapper {
 div.main-header {
     height: 800px;
     width: 100%;
-    background-image: url(images/greenblue.jpg);
+    background-color: #6da7ba;
     background-size: 100%;
     display: flex;
     flex-direction: column;
@@ -973,7 +1005,7 @@ form.inquire-form {
     padding: 25px;
     border-radius: 25px;
     max-width: 800px;
-    width:100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -999,7 +1031,7 @@ div.employment-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width:60%;
+    width: 53%;
 }
 
 div.employment-content h1 {
@@ -1011,8 +1043,34 @@ div.employment-content h1 {
 .employment-image {
     border-radius: 25px;
     object-fit: cover;
-    width: 40%;
+    width: 45%;
 
+}
+
+
+.background--custom {
+    background:
+  radial-gradient(ellipse at 0%, #789B3F, transparent),
+  radial-gradient(ellipse at 100%, #6DA7BA, transparent);
+    background-size: 300% 300%;
+    animation: gradient 6s alternate infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: 100%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 100%;
+    }
 }
 
 @media only screen and (max-width: 1210px) {
@@ -1024,8 +1082,9 @@ div.employment-content h1 {
         flex-direction: column;
     }
 
-    div.employment-content, .employment-image {
-        width:100%;
+    div.employment-content,
+    .employment-image {
+        width: 100%;
     }
 }
 
@@ -1076,8 +1135,12 @@ div.employment-content h1 {
 
     }
 
+    div.header-logos > img {
+        max-width:150px;
+    }
+
     h1 {
-        line-height:50px;
+        line-height: 50px;
         font-weight: 400;
     }
 
@@ -1100,10 +1163,6 @@ div.employment-content h1 {
         border-bottom-left-radius: 15px;
     }
 
-    div.main-header {
-        height: auto;
-
-    }
 
     div.main-header>div>div>h1 {
         font-size: 4em;
@@ -1120,7 +1179,7 @@ div.employment-content h1 {
     }
 
     div.header-text {
-        margin-top: 0px;
+        margin-top: -30px;
     }
 
     summary {
@@ -1249,8 +1308,8 @@ div.employment-content h1 {
         padding: 15px;
     }
 
-    div.employ > h1 {
-        font-size:3.5em;
+    div.employ>h1 {
+        font-size: 3.5em;
     }
 }
 
